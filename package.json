@@ -1,0 +1,35 @@
+{
+  "name": "fazley-alam-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:visual": "node scripts/visual-check.mjs",
+    "test:a11y": "node scripts/a11y-check.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "latest",
+    "@fontsource/cormorant-garamond": "latest",
+    "lucide-react": "latest",
+    "motion": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "playwright-core": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
