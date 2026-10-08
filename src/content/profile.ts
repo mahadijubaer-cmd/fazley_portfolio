@@ -32,7 +32,8 @@ export const profile = {
   title: "Energy Sector Consultant",
   location: "Dhaka, Bangladesh",
   designation:
-    "Energy Sector Consultant | Former Managing Director | Former Director (Gas), BERC",
+    "Energy Sector Consultant | Board Director, BGDCL | Former Managing Director | Former Director (Gas), BERC",
+  availability: "Available for international assignments",
   headline: "Engineering Experience. Strategic Energy Leadership.",
   introduction:
     "Bringing more than 27 years of experience in natural gas infrastructure, regulatory affairs, and executive leadership to the evolving energy landscape.",
@@ -40,7 +41,7 @@ export const profile = {
     "Engr. Md. Fazley Alam is an experienced energy sector professional whose career spans more than 27 years across natural gas transmission, distribution, infrastructure development, regulatory affairs, and corporate leadership in Bangladesh.",
     "A First Class graduate in Mechanical Engineering from Bangladesh University of Engineering and Technology (BUET), he began his professional journey with Bakhrabad Gas Systems Company Limited on 7 February 1999 and subsequently served in management and leadership responsibilities at Pashchimanchal Gas Company Limited.",
     "His professional journey later included service as Director (Gas) at the Bangladesh Energy Regulatory Commission (BERC) from 2023 to 2025, followed by executive leadership as Managing Director of Bakhrabad Gas Distribution Company Limited from 2025 to 2026.",
-    "He now applies his technical, regulatory, and management experience to energy sector consultancy, supporting the evaluation, planning, and strategic development of energy infrastructure initiatives.",
+    "He currently serves on the Board of Directors of Bakhrabad Gas Distribution Company Limited and applies his technical, regulatory, and management experience to independent energy sector consultancy. His advisory focus spans upstream exploration and production, drilling, gas infrastructure, LNG and storage facilities, EPC/EPCM delivery, procurement, and strategic investment evaluation for national and international initiatives.",
   ],
   education: {
     institution: "Bangladesh University of Engineering and Technology",
@@ -124,11 +125,11 @@ export const profile = {
         "Served in executive leadership of a major natural gas distribution organization.",
     },
     {
-      marker: "Tenure not specified",
+      marker: "Current",
       organization: "Bakhrabad Gas Distribution Company Limited",
       role: "Director, Board of Directors",
       description:
-        "Identified in the supplied professional profile as a member of the company’s Board of Directors; the tenure is not specified.",
+        "Contributes board-level governance and strategic oversight within one of Bangladesh’s major gas distribution companies.",
     },
     {
       marker: "Current",
@@ -348,7 +349,10 @@ export const profile = {
   ] satisfies GalleryItem[],
   contact: {
     email: null as string | null,
-    linkedIn: null as string | null,
+    linkedIn: "https://www.linkedin.com/in/fazley-alam-ba1aa3325",
+    facebook: "https://www.facebook.com/share/19LtsQSY6q/?mibextid=wwXIfr",
+    whatsApp: "https://wa.me/8801730357226",
+    whatsAppDisplay: "+880 1730-357226",
     telephone: null as string | null,
   },
 };

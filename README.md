@@ -23,13 +23,12 @@ npm run build
 
 All biography, career, expertise, image, gallery, and contact information is centralized in `src/content/profile.ts`.
 
-Contact details are intentionally unset. Add only approved values to `profile.contact`:
+Contact details are managed in `profile.contact`:
 
-- `email`
-- `linkedIn`
-- `telephone`
+- LinkedIn, Facebook, and WhatsApp are configured from the approved links.
+- Email and telephone remain unset.
 
-No form delivery is simulated. Until contact details are approved, the site displays a neutral availability message.
+No form delivery is simulated. Approved channels link directly to their respective services.
 
 ## Deployment
 
@@ -57,7 +56,7 @@ The original photographs are preserved without facial retouching. Next.js genera
 ## Items awaiting confirmation
 
 - Professional email address
-- LinkedIn URL
-- Telephone number, if approved
+- Separate telephone availability, if calls should be enabled in addition to WhatsApp
 - Final public domain
-- Tenure/status of the board directorship referenced in supplied professional material
+
+The requested project/domain label is `fazleyalam-portfolio`. A canonical URL should only be configured after the actual hosting hostname is confirmed.

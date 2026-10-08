@@ -20,6 +20,8 @@ export default function Home() {
     jobTitle: profile.title,
     address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "Bangladesh" },
     alumniOf: { "@type": "CollegeOrUniversity", name: profile.education.institution },
+    memberOf: { "@type": "Organization", name: "Bakhrabad Gas Distribution Company Limited" },
+    sameAs: [profile.contact.linkedIn, profile.contact.facebook],
     ...(siteUrl ? { url: siteUrl } : {}),
     knowsAbout: [
       "Natural gas transmission and distribution",

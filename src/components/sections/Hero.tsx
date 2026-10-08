@@ -24,6 +24,9 @@ export function Hero() {
             <a className="button button--primary" href="#experience">Explore my experience <ArrowRight size={17} /></a>
             <a className="button button--text" href="#contact">Discuss an engagement <MoveRight size={19} /></a>
           </AnimatedReveal>
+          <AnimatedReveal delay={0.3}>
+            <p className="hero__availability"><span aria-hidden="true" />{profile.availability}</p>
+          </AnimatedReveal>
         </div>
 
         <AnimatedReveal className="hero__visual" direction="right" delay={0.1}>
