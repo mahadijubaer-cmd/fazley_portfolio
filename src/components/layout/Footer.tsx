@@ -1,25 +1,23 @@
 import { ArrowUp, MapPin } from "lucide-react";
-import { navigation, profile } from "@/content/profile";
+import { formatDigits, type Dictionary, type Locale } from "@/content/i18n";
+import { profile } from "@/content/profile";
 
-export function Footer() {
+export function Footer({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   return (
     <footer className="footer">
       <div className="shell footer__grid">
-        <div>
-          <p className="footer__name">{profile.name}</p>
-          <p>{profile.title}</p>
-        </div>
-        <nav aria-label="Footer navigation">
-          {navigation.slice(0, 3).map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
-          {profile.contact.linkedIn ? <a href={profile.contact.linkedIn} target="_blank" rel="noreferrer">LinkedIn</a> : null}
-          {profile.contact.facebook ? <a href={profile.contact.facebook} target="_blank" rel="noreferrer">Facebook</a> : null}
+        <div><p className="footer__name">{dict.common.name}</p><p>{dict.common.professionalTitle}</p></div>
+        <nav aria-label={dict.controls.footerNavigation}>
+          <a href="#about">{dict.navigation.about}</a><a href="#experience">{dict.navigation.experience}</a><a href="#contributions">{dict.navigation.contributions}</a>
+          <a href={profile.contact.linkedIn} target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href={profile.contact.facebook} target="_blank" rel="noreferrer">Facebook</a>
         </nav>
-        <div className="footer__location"><MapPin size={17} /><span>{profile.location}</span></div>
-        <a href="#top" className="to-top" aria-label="Back to top"><ArrowUp /></a>
+        <div className="footer__location"><MapPin size={17} /><span>{dict.common.location}</span></div>
+        <a href="#top" className="to-top" aria-label={dict.controls.backToTop}><ArrowUp /></a>
       </div>
       <div className="shell footer__bottom">
-        <p>© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
-        <p>Energy leadership · Engineering excellence</p>
+        <p>© {formatDigits(locale, String(new Date().getFullYear()))} {dict.common.name}. {dict.footer.rights}</p>
+        <p>{dict.footer.motto}</p>
       </div>
     </footer>
   );
